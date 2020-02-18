@@ -1,0 +1,142 @@
+.contenedor{
+    background-color: rgba(127, 255, 212, 0.521);
+    width:100%;
+    height:800px;
+}
+.top{
+    background-color: rgba(0, 255, 255, 0.89);
+    width:100%;
+    height:125px;
+}
+.mid{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:550px;
+}
+.bot{
+    background-color: rgba(0, 0, 0, 0.514);
+    width:100%;
+    height:125px;
+}
+.cim{
+    overflow: hidden;
+    display:left;
+    width:33%;
+    border-style: groove;
+    border-color: gray;
+}
+.mida{
+    background-color: rgba(127, 255, 212, 0.945);
+    display:left;
+    width:10%;    
+}
+.midb{
+    display:inline-flex;
+    width:80%;
+    flex-direction: column;
+    margin:auto;
+}
+.midc{
+    margin:auto;
+    width:100%;
+    display:flex;
+}
+.midd{
+    margin:auto;
+    width:100%;
+    display:flex;
+
+}
+.midb div>div:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: rgba(243, 242, 239, 0.301) 0px 0px 8px 10px;
+    z-index: 1;
+}
+img{
+    transition: all 1.5s;
+}
+.midc div:nth-child(1)>img:hover{
+    transform: scale(1.5,1.5);
+    z-index: 1;
+}
+.midc div:nth-child(2)>img:hover{
+    transform: scale(1.5,1.5) rotate(30deg);
+    z-index: 1;
+}
+.midc div:nth-child(3)>img:hover{
+    transform: scale(1.5,1.5);
+    filter: brightness(150%);
+    z-index: 1;
+}
+
+
+.midd div:nth-child(3)>img:hover{
+    transform: scale(1.5,1.5);
+    z-index: 1;
+}
+.midd div:nth-child(1)>img:hover{
+    transform: scale(1.5,1.5) rotate(30deg);
+    z-index: 1;
+}
+.midd div:nth-child(2)>img:hover{
+    transform: scale(1.5,1.5);
+    filter: brightness(150%);
+    z-index: 1;
+}
+
+/* .contenedor{
+    display:flex;
+    flex-direction: column;
+    width:90%;
+    margin-left: 5%;
+    margin-right:5%;
+    height: 800px;
+}
+.top .bot .mid{
+    width :100%;
+}
+.contenedor >div{
+   box-shadow: gray 0p 0px 5px 5px; 
+   display:left;
+}
+.top{
+    display:fixed;
+    flex-grow:1;
+    background-color: rgba(0, 255, 255, 0.89);
+}
+.mid{
+    background-color: rgba(0, 0, 255, 0.678);
+    display:flex;
+    flex-grow:3;
+    flex-direction:row;
+}
+.bot{
+    display:fixed;
+    flex-grow:1;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+.mid>div{
+    flex-grow:1;
+}
+.mid :nth-child(2){
+    background-color: rgba(127, 255, 212, 0.726);
+    flex-grow:4;
+}
+.mid :nth-child(1){
+    min-width: 15%;
+    background-color: rgba(127, 255, 212, 0.445);
+}
+.mid :nth-child(3){
+    min-width: 15;
+    background-color: rgba(127, 255, 212, 0.445);
+}
+.mid div>div{
+    
+    width:40%;
+    height:50px;
+}
+img{
+    width:100%;
+    height:40px;
+} */
