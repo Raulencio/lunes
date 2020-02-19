@@ -48,20 +48,25 @@
     display:flex;
 
 }
+.midb div>div{
+    transition: all 1.5s;
+}
 .midb div>div:hover{
     transform: scale(1.1,1.1);
     box-shadow: rgba(243, 242, 239, 0.301) 0px 0px 8px 10px;
     z-index: 1;
 }
 img{
-    transition: all 1.5s;
+    transition: all 1s;
 }
 .midc div:nth-child(1)>img:hover{
     transform: scale(1.5,1.5);
+    filter:opacity(50%);
     z-index: 1;
 }
 .midc div:nth-child(2)>img:hover{
     transform: scale(1.5,1.5) rotate(30deg);
+    filter: grayscale(100%);
     z-index: 1;
 }
 .midc div:nth-child(3)>img:hover{
@@ -69,19 +74,39 @@ img{
     filter: brightness(150%);
     z-index: 1;
 }
+.midd div:nth-child(3){
+    position:relative;
+transition: all 1s;
+}
 
-
+.midd div:nth-child(3)>img{
+transition: all 1.5s;
+}
 .midd div:nth-child(3)>img:hover{
-    transform: scale(1.5,1.5);
+    transform: scale(1.85,1.85);
+    filter: saturate(240%);
     z-index: 1;
+}
+
+/*pase la imagen de blanco y negro a color (usar la propiedad filter:grayscale() de 100% a 0)*/
+.midd div:nth-child(1){
+    filter:grayscale(0%);
+}
+.midd div:nth-child(1)>img{
+    transition: all 1s;
 }
 .midd div:nth-child(1)>img:hover{
-    transform: scale(1.5,1.5) rotate(30deg);
+    transform: scale(2,2);
     z-index: 1;
+    filter:sepia(420%);
 }
+
+/* .midd div:nth-child(2)>img{
+    transition: all 1.5s;
+} */
 .midd div:nth-child(2)>img:hover{
     transform: scale(1.5,1.5);
-    filter: brightness(150%);
+    filter: invert(100%);
     z-index: 1;
 }
 
