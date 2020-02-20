@@ -1,0 +1,110 @@
+@import "colores";
+@import "mixins";
+@import "tamanos";
+body{
+    background-color: $colorBody;
+    margin:2px;
+}
+.contenedor{
+    @include anchoMaximo;
+    background-color: $fondo;    
+    height:$cien*8;
+}
+.top{
+    @include anchoMaximo;
+    background-color:$cTop;
+    height:$cien*1.25;
+}
+.mid{
+    @include anchoMaximo;
+    display:flex;
+    flex-direction: row;
+    height:$cien*5.5;
+}
+.bot{
+    @include anchoMaximo;
+    background-color: $cBot;
+    height:$cien*1.25;
+}
+.cim{
+    overflow: hidden;
+    display:left;
+    width:33%;
+    border-style: groove;
+    border-color: $cBot;
+}
+.mida{
+    background-color: $colorMida;
+    display:left;
+    width:10%;    
+}
+.midb{
+    display:inline-flex;
+    width:80%;
+    flex-direction: column;
+    margin:auto;
+}
+.midc{
+    @include anchoMaximo;
+    @include autoFlex;
+}
+.midd{
+   @extend .midc;
+}
+
+.midb div>div{
+    @include tiempoUnoCinco;
+    &:hover{
+        transform: scale(1.1,1.1);
+        box-shadow: rgba(243, 242, 239, 0.301) 0px 0px 8px 10px;
+        z-index: 1;
+    }
+}
+
+img{
+    @include tiempoUnoCero;
+}
+
+ //imagen uno
+.midc div:nth-child(1)>img:hover{
+    @include losHovers;
+    filter:opacity(50%);   
+}
+
+ //imagen dos
+.midc div:nth-child(2)>img:hover{
+    @include losHovers;
+    filter: grayscale(100%);  
+}
+
+ //imagen tres
+.midc div:nth-child(3)>img:hover{
+    @include losHovers;
+    filter: brightness(150%);   
+}
+
+//imagen cuatro
+.midd div:nth-child(1)>img{
+    @include tiempoUnoCero;
+
+    &:hover{
+        @include losHovers;
+        filter:sepia(420%);
+    }
+}
+
+//imagen cinco
+.midd div:nth-child(2)>img:hover{
+    @include losHovers;
+    filter: invert(100%);   
+}
+
+//imagen seis
+.midd div:nth-child(3)>img{
+    @include tiempoUnoCinco;
+    
+    &:hover{
+        @include losHovers;
+        filter: saturate(240%);  
+    }
+}

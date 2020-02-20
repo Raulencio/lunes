@@ -1,0 +1,14 @@
+
+@mixin anchoMaximo{width:100%;}
+
+@mixin tiempoUnoCinco{transition:all 1.5s;}
+
+@mixin tiempoUnoCero{transition:all 1s;}
+
+@mixin losHovers{
+    z-index: 1;
+    transform: scale(1.85,1.85);}
+
+@mixin autoFlex{
+    margin:auto;
+    display:flex;}
